@@ -34,5 +34,5 @@ def datasplit_train_test(dataframe_name):
     X_scale = pd.DataFrame(X_scale,columns=X.columns)
 
     # Using target and feature data split into training and test data 
-    X_train, X_test, y_train, y_test = train_test_split(X_scale, y, test_size=0.2, random_state=42,shuffle=True)
+    X_train, X_test, y_train, y_test = train_test_split(X_scale, y, test_size=0.3, random_state=42,shuffle=True)
     return X_train, X_test, y_train, y_test
